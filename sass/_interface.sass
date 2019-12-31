@@ -1,0 +1,21 @@
+@font-face 
+  font-family: 'Worksans'
+  src: url(../fonts/Worksans.ttf)
+@font-face 
+  font-family: 'Nunitosansregular'
+  src: url(../fonts/Nunitosansregular.ttf)
+@mixin work
+  font-family: 'Worksans', sans-serif
+@mixin nunito 
+  font-family: 'Nunitosansregular', sans-serif
+@font-face 
+  font-family: 'Montserrat', sans-serif
+@mixin mont 
+  font-family: 'Montserrat', sans-serif
+  font-weight: 500 
+.container 
+  max-width: 1170px 
+  margin: auto 
+body 
+  +mont
+  font-size: 12px 

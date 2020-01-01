@@ -1,55 +1,112 @@
-.header 
-  background: url(../img/header/1.png) no-repeat 
-  background-size: cover 
-  background-position: 10% 100%
-  height: 100vh 
-  width: 100%
+.header
   & .nav 
-    padding-top: 40px 
-    & .nav-block
-      display: flex 
-      justify-content: space-between 
-      align-items: center
-      & .menu 
-        & a 
-          text-transform: uppercase
-          letter-spacing: 0.2px 
-          color: #191919
-          transition: 0.3s 
-          margin-right: 30px 
-          &:last-of-type
-            margin-right: 0
-          &:hover
-            color: #10c9c3
-  & .header-title
+    padding-top: 100px 
+    & .dropdown 
+      position: relative
+      cursor: pointer
+      width: 100%
+      height: 100%
+      & span 
+        position: absolute
+        width: 30px 
+        height: 5px 
+        background: #939ea2
+        border-radius: 5px 
+        &::before
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+          background: #939ea2
+          top: -8px
+          border-radius: 5px  
+        &::after
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+          background: #939ea2
+          top: 8px
+          border-radius: 5px            
+    & .menu 
+      display: none 
+  & .header-logo
     position: absolute
-    top: 50%
+    top: 150px 
     left: 50%
-    transform: translate(-50%,-50%)
-    width: 1170px 
+    transform: translateX(-50%)
+    & h1 
+      text-transform: uppercase
+      +poppins 
+      font-size: 189px
+      color: rgba(#273d46,0.05)
+      letter-spacing: 37.8px 
+      line-height: 40px 
+  & .header-name
+    background: #80b7b3
+    width: 300px 
+    height: 130px 
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    box-shadow: 0px 5px 10px rgba(#273d46,0.5) 
+    & h2 
+      color: #ffffff
+      font-size: 68px 
+  & .header-title
     & .content 
-      float: right
-      & h3 
-        font-size: 38px 
-        letter-spacing: 0.38px 
-        color: #1d1d1d
-      & p 
-        margin-top: 15px
-        +nunito
-        font-size: 18px 
-        letter-spacing: 0.09px 
-        color: #787878
-        line-height: 28px 
-        max-width: 488px 
-      & .btn 
+      margin-top: 170px 
+      max-width: 435px 
+      & h5 
+        text-transform: uppercase
+        +poppins
+        font-size: 14px 
+        color: rgba(#273d46,0.3)
+        letter-spacing: 2.8px 
+      & h4 
         margin-top: 15px 
+        font-size: 36px 
+        line-height: 50px 
+        color: #273d46
+      & p 
+        margin-top: 60px 
+        line-height: 40px 
+        color: rgba(#273d46,0.7)
+      & .btn 
+        margin-top: 25px 
         & button 
-          text-transform: uppercase
-          background: #10c9c3
+          background: #80b7b3
+          border-radius: 20px 
+          width: 200px 
+          height: 40px 
           color: #ffffff
-          letter-spacing: 1.2px 
-          width: 185px 
-          height: 50px 
+          +poppins
+          text-transform: uppercase
+          font-size: 14px 
+          letter-spacing: 2.8px 
+          box-shadow: 0 0 10px rgba(#80b7b3,0.5)
+          transition: 0.3s
+          &:hover
+            transform: scale(1.1)
+    & .img 
+      position: relative
+      width: 100%
+      height: 100%
+      & .one 
+        position: absolute
+        top: 0px 
+        right: 0
+      & .two 
+        position: absolute
+        top: 0
+        
+
+
+
 
       
 

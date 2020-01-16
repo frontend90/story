@@ -1,0 +1,64 @@
+.footer 
+  background: url(../img/contact/1.png) no-repeat 
+  background-size: cover
+  height: 631px 
+  background-position: 100% 100%
+  position: relative
+  margin-top: 100px 
+  & .contact 
+    width: 670px 
+    height: 325px 
+    background: rgba(#3c4f57,0.9)
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    & p 
+      +poppins
+      font-size: 16px 
+      color: #ffffff
+      line-height: 30px 
+      letter-spacing: 0.64px 
+      max-width: 445px
+      margin: auto
+      text-align: center
+      padding-top: 50px  
+    & .form 
+      text-align: center
+      margin-top: 40px 
+      & form 
+        & input[type="text"]
+          background: rgba(#2f3e44,0.7)
+          border-radius: 20px 
+          width: 250px 
+          height: 45px 
+          border: 1px solid rgba(#ffffff,0.3)
+          padding-left: 30px 
+          color: #ffffff
+          +poppins
+          font-size: 14px 
+          &::placeholder 
+            +poppins
+            font-size: 14px 
+            letter-spacing: 2.8px 
+            text-transform: uppercase
+            color: #ffffff
+          &:last-of-type
+            margin-left: 20px 
+        & .btn 
+          margin-top: 20px 
+          & button 
+            background: #80b7b3
+            border-radius: 20px 
+            width: 200px 
+            height: 40px 
+            color: #ffffff
+            +poppins
+            text-transform: uppercase
+            font-size: 14px 
+            letter-spacing: 2.8px 
+            transition: 0.3s
+            &:hover
+              transform: scale(1.1)
+
+    

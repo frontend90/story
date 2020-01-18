@@ -77,9 +77,12 @@ body {
 .header .nav .menu {
   -webkit-box-shadow: 0 0 5px rgba(39, 61, 70, 0.2);
           box-shadow: 0 0 5px rgba(39, 61, 70, 0.2);
-  width: 180px;
-  height: 200px;
-  top: 150px;
+  width: 30%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: fixed;
   background: #ffffff;
   display: none;
@@ -90,7 +93,53 @@ body {
   display: block;
 }
 
-.header .nav .menu a {
+.header .nav .menu .close-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #000000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .nav .menu .close-menu span {
+  background: #ffffff;
+  width: 2px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .nav .menu .close-menu span::before {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  width: 2px;
+  height: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.header .nav .menu .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header .nav .menu .overlay a {
   text-transform: uppercase;
   color: #273d46;
   display: -webkit-box;
@@ -101,10 +150,10 @@ body {
           justify-content: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 5px;
+  padding: 20px 0;
 }
 
-.header .nav .menu a:hover {
+.header .nav .menu .overlay a:hover {
   color: #80b7b3;
 }
 
@@ -358,7 +407,6 @@ body {
           box-shadow: 0 0 30px rgba(39, 61, 70, 0.1);
   width: 750px;
   height: 315px;
-  z-index: 1;
   position: relative;
   top: -55px;
   margin: auto;

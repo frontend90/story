@@ -36,24 +36,55 @@
           border-radius: 5px            
     & .menu 
       box-shadow: 0 0 5px rgba(#273d46,0.2)
-      width: 180px
-      height: 200px
-      top: 150px  
+      width: 30%
+      height: 50%
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%) 
       position: fixed
       background: #ffffff
       display: none 
       z-index: 1
       &.active 
-        display: block  
-      & a 
-        text-transform: uppercase
-        color: #273d46
+        display: block 
+      & .close-menu 
+        position: absolute
+        top: 10px
+        right: 10px
+        background: #000000
+        width: 30px 
+        height: 30px 
+        border-radius: 50%
+        cursor: pointer
         display: flex
+        align-items: center
         justify-content: center
-        transition: 0.3s
-        padding: 5px 
-        &:hover
-          color: #80b7b3
+        & span 
+          background: #ffffff
+          width: 2px 
+          height: 20px 
+          transform: rotate(45deg)
+          &::before
+            content: ''
+            position: absolute
+            background: #ffffff
+            width: 2px 
+            height: 20px 
+            transform: rotate(90deg)
+      & .overlay 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%) 
+        & a 
+          text-transform: uppercase
+          color: #273d46
+          display: flex
+          justify-content: center
+          transition: 0.3s
+          padding: 20px 0 
+          &:hover
+            color: #80b7b3
   & .header-logo
     text-align: center
     & h1 

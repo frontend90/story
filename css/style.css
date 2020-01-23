@@ -161,12 +161,15 @@ body {
   text-align: center;
 }
 
-.header .header-logo h1 {
+.header .header-logo .block {
   position: absolute;
   top: 100px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.header .header-logo .block h1 {
   text-transform: uppercase;
   font-family: 'Poppins-Medium', sans-serif;
   font-size: 189px;
@@ -589,9 +592,15 @@ body {
     width: 100%;
     height: 100%;
   }
-  .header .header-logo h1 {
-    font-size: 50px;
+  .header .header-logo .block {
+    position: absolute;
     top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .header .header-logo .block h1 {
+    font-size: 50px;
   }
   .header .header-title .img {
     top: 100%;
